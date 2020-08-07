@@ -22,22 +22,6 @@ public class Item {
         }
     }
 
-    public void upgradeBackstagePasses(GildedRose gildedRose) {
-        sellIn = sellIn - 1;
-        increaseQuality();
-        if (sellIn < 10) {
-            increaseQuality();
-        }
-
-        if (sellIn < 5) {
-            increaseQuality();
-        }
-
-        if (sellIn < 0) {
-            quality = 0;
-        }
-    }
-
     public void decreaseQuality() {
         if (quality > 0) {
             quality = quality - 1;
