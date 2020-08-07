@@ -5,7 +5,8 @@ public class AgedBrieItem extends Item {
         super(name, sellIn, quality);
     }
 
-    public void upgradeAgedBrie() {
+    @Override
+    public void upgrade() {
         sellIn = sellIn - 1;
         increaseQuality();
         if (sellIn < 0) {
