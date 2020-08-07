@@ -38,14 +38,6 @@ public class Item {
         }
     }
 
-    public void upgradeNormal(GildedRose gildedRose) {
-        sellIn = sellIn - 1;
-        decreaseQuality();
-        if (sellIn < 0) {
-            decreaseQuality();
-        }
-    }
-
     public void decreaseQuality() {
         if (quality > 0) {
             quality = quality - 1;
