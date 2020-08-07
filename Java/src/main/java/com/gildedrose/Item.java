@@ -14,14 +14,6 @@ public class Item {
         this.quality = quality;
     }
 
-    public void upgradeAgedBrie(GildedRose gildedRose) {
-        sellIn = sellIn - 1;
-        increaseQuality();
-        if (sellIn < 0) {
-            increaseQuality();
-        }
-    }
-
     public void decreaseQuality() {
         if (quality > 0) {
             quality = quality - 1;
