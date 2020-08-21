@@ -9,8 +9,7 @@ public class NormalItem extends Item {
     public void upgrade() {
     	setSellIn(getSellIn() - 1);
         decreaseQuality();
-        if (getSellIn() < 0) {
-            decreaseQuality();
-        }
+        
+        if (getSellIn() < 0) decreaseQuality();
     }
 }
